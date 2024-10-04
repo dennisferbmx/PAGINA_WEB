@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>River Shop</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Fondo azul claro */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            color: #2E8B57; /* Verde oscuro */
+        }
+
+        p {
+            color: #555;
+        }
+
+        a {
+            color: #008080; /* Color del enlace */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para el menú */
+        nav {
+            background-image: url('https://cdn.textstudio.com/text-effect/970/f72a2/River.webp');
+            background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+            background-position: center; /* Centra la imagen */
+            padding: 10px;
+            text-align: center;
+            padding: 50px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        /* Estilos para las secciones */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para formularios */
+        form {
+            margin: 20px 0;
+        }
+
+        form input[type="text"], form input[type="email"], form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"], form input[type="reset"] {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover, form input[type="reset"]:hover {
+            background-color: #3CB371;
+        }
+
+        /* Estilos para las tablas */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #2E8B57;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2E8B57;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        /* Video */
+        video {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Enlaces a videos */
+        a.video-link {
+            display: inline-block;
+            background-color: #008080;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        a.video-link:hover {
+            background-color: #20B2AA;
+        }
+
+        /* Mensaje de agradecimiento */
+        #mensaje-gracias {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav>
+    <a href="#productos">Productos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<!-- Sección de productos -->
+<section id="productos">
+    <h2>Nuestros Productos</h2>
+    <p>Ofrecemos una amplia variedad de bicicletas:</p>
+    <ul type="circle">
+        <li>Bicicletas de Montaña</li>
+        <li>Bicicletas de Ruta</li>
+        <li>Bicicletas Eléctricas</li>
+        <li>Bicicletas Urbanas</li>
+    </ul>
+    <img src="https://www.mobikers.com.br/site2021/wp-content/uploads/2015/12/tipos-de-bike-mobikers-00.jpg" alt="Bicicleta de montaña" width="1080" height="300">
+</section>
+
+<!-- Sección de servicios -->
+<section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <p>Nos especializamos en:</p>
+    <ul type="circle">
+        <li>Mantenimiento y Reparación</li>
+        <li>Venta de Accesorios</li>
+        <li>Asesoramiento Personalizado</li>
+        <li>Clases Personalizadas</li>
+    </ul>
+   
+    <img src="https://cdn.brujulabike.com/uploads/images/mantenimiento_mountain_bike.jpg" width="20%" height="20%" alt="Servicio de Mantenimiento">
+    <img src="https://www.jfsports.com.ve/wp-content/uploads/2017/01/mantenimiento-para-bicicleta.png" width="28.5%" height="50%" alt="Mantenimiento">
+    <img src="https://st3.depositphotos.com/4138543/16082/i/950/depositphotos_160822434-stock-photo-first-lessons-bicycle-riding-father.jpg" width="22.7%" height="20%" alt="clase">
+
+</section>
+
+<!-- Sección de contacto -->
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>E-mail</th>
+        </tr>
+        <tr>
+            <td>Fernando Jimenez Aguirre</td>
+            <td>dennisfer294@gmail.com</td>
+        </tr>
+    </table>
+
+    <!-- Formulario de contacto -->
+    <form id="formularioContacto" method="post" action="procesar_contacto.php">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="30"></textarea><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+
+    <!-- Mensaje de agradecimiento -->
+    <div id="mensaje-gracias">
+        ¡Gracias por contactarnos! Nos pondremos en contacto contigo pronto.
+    </div>
+</section>
+
+<!-- Video promocional -->
+<section>
+    <h2>Mira nuestro video promocional</h2>
+    
+    <a href="https://youtu.be/ISBI-a6oFOQ?si=Mf2sA0CFHYon4z9v">
+    <img src="https://www.mundodeportivo.com/r/GODO/MD/p7/Polideportivo/Imagenes/2020/04/30/Recortada/img_cpiedrabuena_20200430-220021_imagenes_md_otras_fuentes_captura_de_pantalla_2020-04-30_a_las_215923-kMEE-U48853275841qXG-980x554@MundoDeportivo-Web.png" width="30%" height="30%"></a>
+  
+</section>
+
+<!-- Enlace a otro documento -->
+<section>
+    <h2>Conoce más sobre nuestras bicicletas</h2>
+    <a href="https://youtu.be/_aNFSuncN54?si=9a6tKogls5hNq0qU" class="video-link">Ver en YouTube</a>
+</section>
+
+<!-- Script de JavaScript para responder al formulario -->
+<script>
+    // Capturamos el formulario y evitamos el envío tradicional
+    document.getElementById('formularioContacto').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar que se recargue la página
+        
+        // Mostrar el mensaje de agradecimiento
+        document.getElementById('mensaje-gracias').style.display = 'block';
+        
+        // Limpiar el formulario
+        document.getElementById('formularioContacto').reset();
+    });
+</script>
+
+</body>
+</html>
